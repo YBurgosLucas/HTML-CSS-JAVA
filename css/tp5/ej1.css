@@ -1,0 +1,56 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top h1{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+    padding-bottom: 30px;
+}
+.top h2{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-bottom: 400px;
+}
+.top h3{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+    float: left;
+    width: 51%;
+    margin: 20px;
+    padding-bottom: 400px;
+}
+.top h4{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid #dcdcdc ;
+    float: right;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-bottom: 400px;
+}
+.bottom h1{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+}
+.bottom h2{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+}
+.bottom h3{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+    
+}
+.bottom h4{
+    background-color: rgb(127, 127, 127);
+    border: 5px solid gainsboro ;
+}
+hr{
+    width: 100%;
+}
