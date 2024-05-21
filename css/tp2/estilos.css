@@ -1,9 +1,19 @@
-a{
-    color: green;
-    font-weight: bold;
-    
 
+a:link{
+     color: green;
+    font-weight: bold;
 }
 a:visited{
     color: red;
+    font-weight: bolder;
+}
+a:hover{
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+}
+a:active{
+    color: blue;
+    font-weight: bolder;
+    font-size: 2em;
 }

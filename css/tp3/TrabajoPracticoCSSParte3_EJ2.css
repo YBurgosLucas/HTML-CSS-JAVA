@@ -13,17 +13,16 @@ img { border: none; }
 #contenedor {
   width: 90%;
   max-width: 900px;
-  width:  901 "900px" "auto";
+  width: 901"900px" "auto";
   margin: 0 auto;
 }
 
 #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
-  
+  border: 2px solid #777;
 }
 
 #cabecera { clear: both; }
 #menu { clear: both; }
-
 #lateral { float: left; width: 20%; }
 #contenido { float: right; width: 78%; }
 #contenido #principal { float: left; width: 78%; }
@@ -60,6 +59,7 @@ img { border: none; }
 #contenido #secundario,
 #pie {
   padding: .5em;
+  border: none;
 }
 
 #lateral {
@@ -72,7 +72,8 @@ img { border: none; }
 
 #menu {
   margin-bottom: .5em;
-  border-bottom: 1px double #004C99;
+  border-bottom: 1px solid #004C99;
+  background: url(../tp3/fondo_menu.gif) ; 
 }
 
 #contenido {
@@ -84,12 +85,16 @@ img { border: none; }
   width: 73%;
 }
 
+#contenido #secundario {
+  border: 1px solid #C60;
+}
+
 #pie {
   padding: .5em 0;
   margin-top: 1em;
-  border-bottom: 1px double  #C5C5C5;
-  border-top: 1px double #C5C5C5 ;
-  
+  border-top: 1px solid #C5C5C5;
+  border-bottom: 1px solid #C5C5C5; 
+  background-color: #dfdede;
 }
 
 #contenido #principal .articulo {
@@ -100,26 +105,29 @@ img { border: none; }
   margin: .5em;
 }
 
+#lateral #noticias {
+  border: 1px solid #C5C5C5;
+}
+
 #lateral #publicidad {
   margin-top: 1em;
+  border: 1px dashed #C60;
+  
 }
+#secundario h2   {
+  background-color:  #DB905C;
+  padding: .2em;
+}
+#cabecera h1{
+  background: url(../tp3/logo.gif);
+  padding-bottom: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
 
-#noticias{
-    border-left: 1px double #C5C5C5;
-    border-right: 1px double #C5C5C5;
-    border-bottom: 1px double #C5C5C5;
-    border-top: 1px double #C5C5C5;
 }
+#noticias {
+  background-color:#dfdede;
 
-#publicidad{
-    border-width: 1px;
-    border-style: dashed  ;
-    border-color:#CC6600 ;
-    
 }
-#secundario{
-  border-left: 1px double  #CC6600;
-  border-right: 1px double #CC6600;
-  border-bottom: 1px double #CC6600;
-  border-top: 1px double #CC6600;
+#publicidad {
+  background-color: #FFF6CD;
 }

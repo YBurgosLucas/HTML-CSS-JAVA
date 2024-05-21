@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+     #nombre, #apellido, #telefono { 
+        border: 1px double #C5C5C5; 
+         font-style: Arial, Helvetica, sans-serif ; 
+         color: #666666;
+         font-size: 12px ;
+         padding: 5px;
+
+        }
+     #reestablecer{
+        font-style: italic;
+        border: 2px double rgb(129, 12, 12);
+        background-color: rgb(243, 18, 18);
+    }
+    #enviar{
+        font-style: italic;
+        border: 2px double green;
+        background-color: rgb(17, 252, 17);
+    }
+    </style>
+    <body>
+        
+            <form action="">
+                Ingresar datos:
+                    Ingresar nombre: <br>
+                    <input type="text" name="nombre" id="nombre" maxlength="25"> <br><br>
+                    Ingresar apellido: <br>
+                    <input type="text" name="apellido" id="apellido" maxlength="25"> <br><br>
+                    direccion: <br>
+                    <textarea name="direccion" id="direccion" maxlength="30" placeholder="Direccion.."></textarea> <br> <br>
+                    Telefono: <br>
+                    <input type="text" name="telefono" id="telefono" maxlength="15" value="0299"> <br> <br>
+                    seleccione: <br>
+                    <input type="checkbox" name="alquilar" id="alquilar" >alquilar
+                    <input type="checkbox" name="compra" id="compra" checked>compra <br> <br>
+                    seleccione Zona: <br>
+                    <input type="checkbox" name="norte" id="norte" checked>norte 
+                    <input type="checkbox" name="sur" id="sur" checked>sur <br>
+                    <input type="checkbox" name="este" id="este"> este
+                    <input type="checkbox" name="oeste" id="oeste"> oeste <br><br>
+                    comentario del inmueble que busca: <br>
+                    <textarea name="inmueble" id="inmueble" placeholder="inmueble grande..."></textarea> <br> <br>
+                    <input type="reset" name="reestablecer" id="reestablecer">
+                    <input type="submit" name="enviar" id="enviar">
+
+
+
+                </form>
+    </body>
+</html>  
