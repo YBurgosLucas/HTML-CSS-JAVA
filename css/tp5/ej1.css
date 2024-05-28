@@ -1,6 +1,9 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
 }
+
 .top h1{
     background-color: rgb(127, 127, 127);
     border: 5px solid gainsboro ;
@@ -34,23 +37,34 @@ body{
     margin-left: 20px;
     padding-bottom: 400px;
 }
+
+hr{
+    width: 100%;
+}
 .bottom h1{
     background-color: rgb(127, 127, 127);
     border: 5px solid gainsboro ;
+    height: 10%;
 }
 .bottom h2{
     background-color: rgb(127, 127, 127);
     border: 5px solid gainsboro ;
+    float: left;
+    width: 20%;
+    height: 60%;
 }
 .bottom h3{
     background-color: rgb(127, 127, 127);
     border: 5px solid gainsboro ;
+    float: right;
+    width: 70%;
+    height: 60%;
+    margin-right: 10px;
     
 }
 .bottom h4{
     background-color: rgb(127, 127, 127);
     border: 5px solid gainsboro ;
-}
-hr{
-    width: 100%;
+    clear: both;
+    height: 10%;
 }
