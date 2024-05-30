@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <noscript type="text/javascript">
+            var DatosPersonales,nombre, apellido, estadoCivil, edad, FechaNacimiento,DNI
+            DatosPersonales="Datos Personales";
+            nombre="Juan";
+            apellido="Perez";
+            estadoCivil="Soltero";
+            edad=44;
+            FechaNacimiento="1/1/1980";
+            DNI=33333333;
+
+            document.write(DatosPersonales+"<br>"); 
+            document.write("Nombre:"+nombre+"<br>");
+            document.write("Apellido"+apellido+"<br>");
+            document.write("Estado Civil:"+estadoCivil+"<br>");
+            document.write("Edad:"+edad+"<br>");
+            document.write("Fecha de Nacimiento:"+FechaNacimiento+"<br>");
+            document.write("DNI:"+DNI+"<br>");
+        </noscript>
+        <script type="text/javascript">
+            var coleccion
+            coleccion=["Juan","Perez","Soltero",44, "1/1/1980",33333333];
+            document.write("Datos Personales <br>");
+            document.write("Nombre:"+coleccion[0]+"<br>");
+            document.write("Apellido:"+coleccion[1]+"<br>");
+            document.write("Estado Civil:"+coleccion[2]+"<br>");
+            document.write("Edad:"+coleccion[3]+"<br>");
+            document.write("Fecha de Nacimiento:"+coleccion[4]+"<br>");
+            document.write("DNI:"+coleccion[5]+"<br>")
+        </script>
+    </head>
+</html>
