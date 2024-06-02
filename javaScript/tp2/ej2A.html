@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function contrasena(){
+            var coleccion, contrasena,salida;
+            contrasena=prompt("contrasena");
+            if(contrasena == "minombre"){
+                salida=document.getElementById("salida");
+                salida.value+="Datos Personales:\nNombre:Juan \nApellido: Perez \nEstado civil: Soltero \nEdad: 44 \nFecha de Nacimiento: 1/1/1980 \nDNI: 33333333"; 
+            }
+            else{
+                alert("contrasena incorrecta");
+            }  
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="contrasena()"> Contrasena</button>
+        <br>
+        <textarea name="salida" id="salida" rows="10" cols="50"></textarea>
+    </body>
+</html>

@@ -1,38 +1,61 @@
 <html>
     <head>
-
-    </head>
-    <body>
         <script type="text/javascript">
-            var x, y;
-            x=prompt('x=',0);
-			y=prompt('y=',0);
-            function suma(x, y){
-                var suma;
-                suma=parseInt(x)+parseInt(y);
-                return suma;
-            }
-            function resta(x,y){
-                var resta;
-                resta=parseInt(x)-parseInt(y);
-                return resta;
-            }
-            function multiplicacion(x,y){
-                var multiplicacion ;
-                multiplicacion=parseInt(x)-parseInt(y);
-                return multiplicacion;
-            }
-            function division(x,y){
-                var division 
 
+            function suma(){
+                var x, y, suma, salida;
+                x=prompt('x=',0);
+			    y=prompt('y=',0);
+                suma=parseInt(x)+parseInt(y);
+                salida=document.getElementById("salida");
+			    salida.value+=x+'+'+y+'='+suma+'\n'; 
+            }
+            function resta(){
+                var x, y, resta, salida;
+                x=prompt('x=',0);
+			    y=prompt('y=',0);
+                resta=parseInt(x)-parseInt(y);
+                salida=document.getElementById("salida");
+			    salida.value+=x+'-'+y+'='+resta+'\n'; 
+            }
+            function multiplicacion(){
+                var x, y, multiplicacion, salida;
+                x=prompt('x=',0);
+			    y=prompt('y=',0);
+                multiplicacion=parseInt(x)*parseInt(y);
+                salida=document.getElementById("salida");
+			    salida.value+=x+'*'+y+'='+multiplicacion+'\n'; 
+            }
+            function division(){
+                var x, y, division, salida;
+                x=prompt('x=',0);
+			    y=prompt('y=',0);
                 if(y !=0){
-                    division=parseInt(x)-parseInt(y);
-                    return division;
+                    division=parseInt(x)/parseInt(y);
+                    salida=document.getElementById("salida");
+			        salida.value+=x+'/'+y+'='+division+'\n'; 
                 }
                 else{
-                    return document.write("el denominador es 0 no se puede realizar division");
+                    alert("el denominador es 0 no se puede realizar division");
                 }
             }
+            function cuadrado(){
+                var x, cuadrado, salida;
+                x=prompt("x=", 0);
+                cuadrado=parseInt(x)*parseInt(x);
+                salida=document.getElementById("salida");
+			    salida.value+=x+'*'+x+'='+cuadrado+'\n'; 
+            }
             </script>
+    </head>
+    <body>
+        <button onclick="suma()">Sumar</button>
+        <button onclick="resta()">Resta</button>
+        <button onclick="multiplicacion()">Multiplicacion</button>
+        <button onclick="division()">Division</button>
+        <button onclick="cuadrado()">Cuadrado</button>
+
+        <br>
+        <textarea id="salida" name="salida" rows="10" cols="50"></textarea>  
     </body>
 </html>

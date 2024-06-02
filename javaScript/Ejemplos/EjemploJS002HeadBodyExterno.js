@@ -1,3 +1,3 @@
 function enExterno(){
-	alert("en khe");
+	alert("en body");
 	}
