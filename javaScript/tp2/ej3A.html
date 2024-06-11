@@ -1,48 +1,28 @@
 <html>
     <head>
+        <script type="text/javascript">
+            function para(array){
+                var salida;
+                salida="<ul>";
+                
+                for(var i=0; i<array.length; i++){
+                    salida+="<li>"+array[i]+"</li>";
+                
+                }
+                salida+="</ul>";
+                document.write(salida);
+            }
 
+        </script>
     </head>
     <body>
         <h1>Calendario</h1> <br>
-        <ul> <script type="text/javascript">
-               
-            function para(){
-                var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-                for(var i=0; i<meses.length; i++){
-                    document.write(meses[i]+"<br>");
+         <script type="text/javascript" >
+            var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            para(meses);
+         </script>
 
-                }
-            }
-            function mientras(){
-                var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-                var i=0;
-                while(i <12){
-                    document.write(meses[i]+"<br>");
-                    i++;
-                }
-            }
-            function mientrasTanto(){
-                var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-                var i=0;
-                do{
-                    document.write(meses[i]+"<br>");
-                    i++;
-                }while(i<12);
-            }
-            function paraIn(){
-                var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-            
-                for( var i in meses ){
-                    document.write(meses[i]+"<br>");
-                }
-            }
-        </script>
 
-            <li><button onclick="para()"> for</button></li>
-            <li><button onclick="mientras()">while</button></li>
-            <li><button onclick="mientrasTanto()">do while</button></li>
-            <li><button onclick="paraIn()">for in</button></li>
-        </ul>
 
     </body>
 </html>
